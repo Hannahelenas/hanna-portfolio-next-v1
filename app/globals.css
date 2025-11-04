@@ -22,14 +22,16 @@ body {
 
 .light {
   --color-bg: #ffffff; /* #f4e9d9; */
-  --color-text: #070723;
+  --color-bg-secondary: #f0f5f5;
+  --color-text: #313840; /* #070723; */ /* #313840; */
   --color-text-secondary: #013b6a;
-  --color-navbar: /* #b5d4d1; */ #e1ecec; /* #fff4d4; */
+  --color-navbar: #e1ecec;
   --color-footer: #070723;
 }
 
 .dark {
   --color-bg: #070723;
+  --color-bg-secondary:  /* #013b6a; */
   --color-text: #e1ecec;
   --color-text-secondary: #fff4d4;
   --color-navbar: #070723;
