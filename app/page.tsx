@@ -1,16 +1,15 @@
 import HeroSection from "./components/HeroSection";
+import ProjectsSection from "./components/ProjectsSection";
 
 export default function Home() {
   return (
     <main
-      className="flex min-h-screen w-full flex-col items-center 
+      className="flex min-h-screen w-full flex-col items-center overflow-x-hidden
         "
     >
       <HeroSection />
+      <ProjectsSection />
 
-      <section id="projects" className="py-10">
-        <h2 className="font-serif-custom text-3xl lg:text-5xl">Projects</h2>
-      </section>
       {/*  <section id="about" className="py-10">
         <h2 className="font-serif-custom text-5xl">About</h2>
       </section>
