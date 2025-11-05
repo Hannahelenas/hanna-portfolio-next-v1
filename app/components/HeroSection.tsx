@@ -14,7 +14,8 @@ export default function HeroSection() {
         >
           <h1
             className="text-4xl lg:text-5xl font-black tracking-tighter 
-            text-[--color-text]"
+            text-(--color-text-secondary)
+            "
           >
             Hanna Klang Eriksson
           </h1>
@@ -30,8 +31,9 @@ export default function HeroSection() {
 
           <div className="mt-4 flex gap-3">
             <button
-              className="bg-[#2c3e50] border border-(--color-text-secondary)
-             px-6 py-3  rounded-full text-white
+              className="bg-(--color-text-secondary) border 
+              border-(--color-text-secondary)
+             px-6 py-3  rounded-full text-(--color-text-light)
             transition-all 
             duration-300 ease-in-out hover:cursor-pointer hover:bg-transparent
             hover:text-black 
@@ -40,8 +42,8 @@ export default function HeroSection() {
               See my portfolio
             </button>
             <button
-              className="bg-[#34495e] border border-(--color-text-secondary)
-             px-6 py-3 rounded-full text-white font-semibold
+              className=" border border-(--color-text-secondary)
+             px-6 py-3 rounded-full  font-semibold
             transition-all 
             duration-300 ease-in-out hover:cursor-pointer 
             hover:bg-(--color-text-secondary)

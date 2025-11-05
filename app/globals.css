@@ -21,19 +21,21 @@ body {
 }
 
 .light {
-  --color-bg: #ffffff; /* #f4e9d9; */
-  --color-bg-secondary: #f0f5f5;
+  --color-bg: #eeeae8; /* #F9F3EB */
+  --color-bg-secondary: #fffcfa; /* #f0f5f5; */
   --color-text: #313840; /* #070723; */ /* #313840; */
-  --color-text-secondary: #013b6a;
-  --color-navbar: #e1ecec;
-  --color-footer: #070723;
+  --color-text-secondary: #1d150f; /* #013b6a; */
+  --color-navbar: #fffcfa; /* #FFFCFA; */ /* #F9F3EC; */ /* #e1ecec; */
+  --color-footer: #1d150f; /* #070723; */
+  --color-text-light: white;
 }
 
 .dark {
   --color-bg: #070723;
-  --color-bg-secondary:  /* #013b6a; */
+  --color-bg-secondary: #070723;
   --color-text: #e1ecec;
   --color-text-secondary: #fff4d4;
   --color-navbar: #070723;
   --color-footer: #070723;
+  --color-text-light: white;
 }
