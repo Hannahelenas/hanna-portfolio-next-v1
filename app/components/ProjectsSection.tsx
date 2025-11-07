@@ -7,8 +7,8 @@ export default function ProjectsSection() {
     <section id="projects" className="py-10 max-w-6xl mx-auto">
       {" "}
       <h2
-        className=" text-3xl lg:text-5xl text-center mb-4 
-      font-serif-custom"
+        className=" text-4xl lg:text-5xl text-center mb-4 
+      font-serif-custom tracking-tighter"
       >
         Projects
       </h2>

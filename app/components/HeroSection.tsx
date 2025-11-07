@@ -13,8 +13,8 @@ export default function HeroSection() {
         lg:items-start"
         >
           <h1
-            className="text-4xl lg:text-5xl font-black tracking-tighter 
-            text-(--color-text-secondary)
+            className="text-4xl lg:text-5xl tracking-tighter 
+            text-(--color-text-secondary) font-serif-custom
             "
           >
             Hanna Klang Eriksson
