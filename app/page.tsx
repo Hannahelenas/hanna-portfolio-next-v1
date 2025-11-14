@@ -1,6 +1,8 @@
+import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 import HeroSection from "./components/HeroSection";
 import ProjectsSection from "./components/ProjectsSection";
+import SkillsSection from "./components/SkillsSection";
 
 export default function Home() {
   return (
@@ -10,11 +12,9 @@ export default function Home() {
     >
       <HeroSection />
       <ProjectsSection />
+      <AboutSection />
+      <SkillsSection />
       <ContactSection />
-      {/*  <section id="about" className="py-10">
-        <h2 className="font-serif-custom text-5xl">About</h2>
-      </section>
-      */}
     </main>
   );
 }

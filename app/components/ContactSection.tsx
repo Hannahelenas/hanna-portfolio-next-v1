@@ -11,10 +11,9 @@ export default function ContactSection() {
         </h2>
         <p className="mt-8 sm:w-3/4 lg:w-5/9 text-center leading-relaxed">
           I’m currently open to new opportunities. Feel free to reach out with
-          projects, feedback, or any questions. I’d love to hear from you and
-          will do my best to get back to you soon!
+          projects, feedback, or any questions. I’d love to hear from you!
         </p>
-        <div className="mt-8">
+        <div className="mt-8 mb-8">
           <a
             href={`mailto:${email}`}
             className="bg-(--color-text-secondary) border 

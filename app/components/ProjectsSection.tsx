@@ -12,7 +12,7 @@ export default function ProjectsSection() {
       >
         Projects
       </h2>
-      <ul className="grid grid-cols-1 gap-6">
+      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-6">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
