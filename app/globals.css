@@ -28,6 +28,8 @@ body {
   --color-navbar: #fffcfa; /* #FFFCFA; */ /* #F9F3EC; */ /* #e1ecec; */
   --color-footer: #1d150f; /* #070723; */
   --color-text-light: white;
+  --color-chip: #f2f0ed;
+  --color-accent-primary: #e4e0dd;
 }
 
 .dark {
@@ -38,4 +40,5 @@ body {
   --color-navbar: #070723;
   --color-footer: #070723;
   --color-text-light: white;
+  --color-chip: #f2f0ed;
 }
