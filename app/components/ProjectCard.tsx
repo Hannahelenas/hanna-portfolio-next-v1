@@ -23,13 +23,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             alt={project.title}
             width={700}
             height={700}
-            className="rounded-t-xl object-cover mx-auto "
+            className="rounded-t-xl object-cover mx-auto"
             placeholder="blur"
             blurDataURL="data:..."
           />
           <svg
             aria-hidden="true"
-            className="absolute left-0 bottom-0 w-full h-[60px] 
+            className="absolute left-0 -bottom-px w-full h-[60px] 
             text-(--color-chip)"
             viewBox="0 0 1000 150"
             preserveAspectRatio="none"
@@ -47,20 +47,24 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         relative rounded-b-xl"
         >
           <div className="flex flex-col justify-between">
-            <div>
-              <h3 className="text-3xl mb-2 font-black tracking-tighter">
+            <div className="flex-1">
+              <h3
+                className="text-2xl md:text-3xl mb-2 font-semibold 
+              font-serif-custom tracking-tight"
+              >
                 {project.title}
               </h3>
-              <p className="text-md font-serif-custom leading-relaxed mb-2">
+              <p className="text-md  leading-relaxed mb-2">
                 {project.description}
               </p>
             </div>
 
             {/* Bottom links */}
-            <div className="flex flex-row gap-4 mt-2">
+            <div className="flex flex-row gap-4 mt-2 mb-2">
               <a
-                className="flex items-center gap-1 font-bold font-serif-custom 
-              hover:underline underline-offset-2"
+                className="flex items-center gap-1 font-semibold 
+                tracking-tighter underline
+                hover:underline underline-offset-2"
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -70,8 +74,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <MdOpenInNew aria-hidden="true" className="text-2xl" />
               </a>
               <a
-                className="flex items-center gap-1 font-bold font-serif-custom 
-              hover:underline underline-offset-2"
+                className="flex items-center gap-1 font-semibold 
+                tracking-tighter underline
+                hover:underline underline-offset-2"
                 href={project.repo}
                 target="_blank"
                 rel="noopener noreferrer"
