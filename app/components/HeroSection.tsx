@@ -1,68 +1,51 @@
 "use client";
 
+import PrimaryButtonLink from "./common/PrimaryButtonLink";
+import SecondaryButtonLink from "./common/SecondaryButtonLink";
+
 export default function HeroSection() {
   return (
     <div className="bg-(--color-bg-secondary) w-full relative">
       <section
         className="max-w-6xl grid grid-cols-1 lg:grid-cols-1 mx-auto 
-       pt-10 lg:pt-18 pb-22 px-5 md:px-10 xl:px-0  "
+       py-15 px-5 md:px-10 xl:px-0"
       >
-        <div
-          className="flex flex-col justify-center items-center
-        lg:items-center"
-        >
+        <div className="flex flex-col justify-center items-center pb-16">
           <h1
-            className="text-5xl lg:text-7xl  leading-tight
-            text-(--color-text-secondary) font-display-custom font-bold mb-2 
-            text-center
-            "
+            className="text-5xl lg:text-7xl leading-tight tracking-tighter
+            text-(--color-text) font-display-custom font-bold mb-4 
+            text-center"
           >
             Hanna Klang Eriksson
           </h1>
           <p
             className="font-serif-custom text-2xl md:text-3xl font-semibold 
-          mt-2"
+          mb-2 text-(--color-text-secondary) tracking-tight"
           >
             Frontend developer
           </p>
           <p
-            className="mt-4 text-lg md:text-xl text-center
-          "
+            className="mt-4 text-lg md:text-xl text-center sm:w-3/4 
+          leading-relaxed"
           >
             {" "}
-            I build websites and applications with a focus on inclusive design
-            and accessibility.
+            I build apps and websites with a focus on inclusive design and
+            accessibility.
           </p>
 
           <div className="mt-8 flex gap-3">
-            <button
-              className="bg-(--color-text-secondary) border 
-              border-(--color-text-secondary)
-             px-6 py-3  rounded-full text-(--color-text-light)
-            transition-all 
-            duration-300 ease-in-out hover:cursor-pointer hover:bg-transparent
-            hover:text-black 
-            hover:border-(--color-text-secondary) font-bold tracking-wide"
-            >
+            <PrimaryButtonLink href="#projects">
               See my portfolio
-            </button>
-            <button
-              className=" border border-(--color-text-secondary)
-             px-6 py-3 rounded-full  font-semibold
-            transition-all 
-            duration-300 ease-in-out hover:cursor-pointer 
-            hover:bg-(--color-text-secondary)
-            hover:text-white
-            hover:border-(--color-text-secondary)"
-            >
+            </PrimaryButtonLink>
+            <SecondaryButtonLink href="#contact">
               Contact me
-            </button>
+            </SecondaryButtonLink>
           </div>
         </div>
       </section>
       <svg
         aria-hidden="true"
-        className="absolute left-0 bottom-0 w-full h-[60px] text-(--color-bg)"
+        className="absolute left-0 -bottom-1 w-full h-16 text-(--color-bg)"
         viewBox="0 0 1000 150"
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
