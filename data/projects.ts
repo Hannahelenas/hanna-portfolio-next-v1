@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description: `Fullstack project written in TypeScript and built in React. 
     The client communciates with a local SQLite database using Node.js and 
     Express. 
-    Styning features are made using Material Ui and Styled 
+    Styling features are made using Material Ui and Styled 
     Components. Images from Unsplash.`,
     image: "/hippo-safaris-desktop.png",
     url: "https://hippo-safaris.onrender.com/",
