@@ -13,14 +13,6 @@ export default function ThemeToggle() {
 
   if (!mounted) return null;
 
-  /* if (resolvedTheme === "dark") {
-    return <FiSun onClick={() => setTheme("light")} size={25} />;
-  }
-
-  if (resolvedTheme === "light") {
-    return <FiMoon onClick={() => setTheme("dark")} size={25} />;
-  } */
-
   return (
     <button
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}

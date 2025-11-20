@@ -22,7 +22,7 @@ const navLinks = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="bg-(--color-navbar) py-2">
+    <nav className="bg-(--color-bg-secondary) py-2">
       <div
         className="max-w-6xl mx-auto grid grid-cols-2 
         lg:grid-cols-3 items-center pl-5 pr-2 sm:pl-10 sm:pr-7 xl:px-0"

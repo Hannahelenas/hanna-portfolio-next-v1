@@ -26,19 +26,15 @@ const skillsData = [
 export default function SkillsSection() {
   return (
     <div className="bg-(--color-bg-secondary) w-full">
-      <section className="max-w-5xl mx-auto py-12">
+      <section className="max-w-5xl mx-auto py-15">
         <h2
-          className="font-display-custom text-4xl lg:text-5xl font-bold 
-          leading-tight mb-4 
-        mt-10 text-center"
+          className="text-4xl lg:text-5xl text-center mb-10 font-serif-custom 
+          tracking-tight font-semibold text-(--color-text-secondary)"
         >
           Skills
         </h2>
-        <p className="font-serif-custom text-lg text-center mb-12">
-          Technologies and tools i work with
-        </p>
         <div
-          className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 mb-10 px-10 
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-10 
         xl:px-0"
         >
           {skillsData.map((category) => (

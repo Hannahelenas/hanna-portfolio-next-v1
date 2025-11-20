@@ -21,24 +21,23 @@ body {
 }
 
 .light {
-  --color-bg: #eeeae8; /* #F9F3EB */
-  --color-bg-secondary: #fffcfa; /* #f0f5f5; */
-  --color-text: #313840; /* #070723; */ /* #313840; */
-  --color-text-secondary: #1d150f; /* #013b6a; */
-  --color-navbar: #fffcfa; /* #FFFCFA; */ /* #F9F3EC; */ /* #e1ecec; */
-  --color-footer: #1d150f; /* #070723; */
-  --color-text-light: white;
+  --color-bg: #eeeae8;
+  --color-bg-secondary: #fffcfa;
+  --color-text: #1d150f;
+  --color-text-secondary: #313840;
+  --color-card-bg: #ffffff;
+  --color-text-light: #ffffff;
   --color-chip: #f2f0ed;
   --color-accent-primary: #e4e0dd;
 }
 
 .dark {
-  --color-bg: #070723;
-  --color-bg-secondary: #070723;
-  --color-text: #e1ecec;
-  --color-text-secondary: #fffcfa; /* #fff4d4; */
-  --color-navbar: #070723;
-  --color-footer: #070723;
-  --color-text-light: white;
-  --color-chip: #f2f0ed;
+  --color-bg: #1c1a19;
+  --color-bg-secondary: #242221;
+  --color-text: #e4e0dd;
+  --color-text-secondary: #cfc7c2;
+  --color-card-bg: #242221;
+  --color-text-light: #ffffff;
+  --color-chip: #2d2a29;
+  --color-accent-primary: #4a433e;
 }
