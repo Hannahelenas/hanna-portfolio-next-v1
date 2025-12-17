@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
 import ThemeToggle from "./ThemeToggle";
+import { useRef } from "react";
+import MobileNavMenu from "./MobileNavMenu";
 
 const navLinks = [
   {
@@ -19,10 +21,14 @@ const navLinks = [
   },
 ];
 
+const animationClass: string = "animate-fade-in-up";
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+
   return (
-    <nav className="bg-(--color-bg-secondary) py-2">
+    <nav className="relative bg-(--color-bg-secondary) py-2">
       <div
         className="max-w-6xl mx-auto grid grid-cols-2 
         lg:grid-cols-3 items-center pl-5 pr-2 sm:pl-10 sm:pr-7 xl:px-0"
@@ -55,10 +61,13 @@ export default function Navbar() {
           className="flex justify-end items-center gap-1  
          "
         >
-          <ThemeToggle />
+          <div className={`${animationClass} delay-1`}>
+            <ThemeToggle />
+          </div>
           <button
+            ref={menuButtonRef}
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden text-3xl p-2  
+            className="lg:hidden text-3xl p-2 hover:cursor-pointer
             "
             aria-label={
               menuOpen ? "Close navigation menu" : "Open navigation menu"
@@ -76,22 +85,11 @@ export default function Navbar() {
         <div />
       </div>
       {/* Mobile navlink menu */}
-      {menuOpen && (
-        <div className="lg:hidden px-5 sm:px-10 pb-4">
-          <ul
-            className="flex flex-col gap-4 
-          font-serif"
-          >
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <Link href={link.href} onClick={() => setMenuOpen(false)}>
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <MobileNavMenu
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        menuButtonRef={menuButtonRef}
+      />
     </nav>
   );
 }
