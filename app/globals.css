@@ -41,3 +41,36 @@ body {
   --color-chip: #2d2a29;
   --color-accent-primary: #4a433e;
 }
+
+/* Fade in animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.animate-fade-in-up.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.animate-fade-in-up.delay-3 {
+  animation-delay: 0.6s;
+}
+
+.animate-fade-in-up.delay-4 {
+  animation-delay: 0.8s;
+}
