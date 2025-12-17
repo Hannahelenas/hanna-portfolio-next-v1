@@ -11,12 +11,14 @@ export const projects: Project[] = [
   {
     id: "1",
     title: "Park Exporer",
-    description: `Project built in React, park data is displayed from the 
-    National Parks Service Api and weather Api. Responsive styling made with 
-    Tailwind CSS.`,
+    description: `Fullstack project built in React with a Node.js and Express 
+    backend. Park data is displayed from the National Parks Service API and 
+    Weather API. Responsive styling is done with Tailwind CSS. Users can create 
+    an account and log in. The backend connects to a serverless PostgreSQL 
+    database.`,
     image: "/park-explorer-desktop.png",
     url: "https://parkexplorer.netlify.app/",
-    repo: "https://github.com/Hannahelenas/nps-park-explorer",
+    repo: "https://github.com/Hannahelenas/nps-park-explorer-fullstack",
   },
   {
     id: "2",
