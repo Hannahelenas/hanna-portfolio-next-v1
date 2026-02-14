@@ -37,6 +37,7 @@ export default function MobileNavMenu({
         px-5 sm:px-10 pb-4
         bg-(--color-bg-secondary)
         transition-all duration-300 ease-out 
+        h-[50dvh] sm:h-[40dvh] md:h-[35dvh]
     ${
       menuOpen
         ? "opacity-100 translate-y-0 pointer-events-auto"
@@ -44,7 +45,7 @@ export default function MobileNavMenu({
     }
   `}
     >
-      <ul className="flex flex-col gap-4 font-serif">
+      <ul className="flex flex-col gap-4 font-serif text-xl">
         {navLinks.map((link) => (
           <li key={link.name}>
             <Link
